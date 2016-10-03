@@ -19,7 +19,7 @@
 
   scp - transfer files to and from corn
   ex. transfer file to home directory on corn
-  $ scp mihika.txt mhemmady@corn.stanford.edu:~/
+  $ scp mihika.txt mhemmady@corn.stanford.edu:~/y
 
   Farmshare Directory
     /farmshare/user_data/mhemmady/
@@ -32,8 +32,29 @@
     mihika.txt
 
 5) Git
-  $ git init myproject
-  $ cd myproject
-  $ git add .
-  $ git commit -m"xxxx"
+  configure git
+    $ git config --global user.name "xxxx"
+    $ git config --global user.email xxxxxx
+    $ git config --global core.editor xxx
+  stored in a git configuration file located at ~/.gitconfig
+  $ cat ~/config.gitconfig 
+
+  clone the test repository: create repository in github
+  in the directory you want to create the folder
+    $ git clone [github repository]
+
+  check the status of the repository in the right director
+    $ git status
+  add file to repository
+    $ git add xxx
+    $ git status
+
+  commit changes to repo
+    $ git commit -m "notes about change"
+
+  push changes to GitHub
+    $ git push 
+
+  modify file on GitHub, pull back to local repository
+
 
