@@ -1,0 +1,39 @@
+1) Looking at things
+  cat - dump a file to terminal
+  less - open file in a pager (q to quit)
+  file - inspect file type
+
+2) Manipulating files
+  mv - move
+  rm - remove (-rf flag for directories)
+  mkdir - create directories
+
+3) Inspecting commands
+  help 
+  man
+
+4) Remote Computing
+  my computer --> corn@stanford.edu --> worker node
+  ssh - program to link local computer to remote computer
+  $ ssh mhemmady@corn.stanford.edu
+
+  scp - transfer files to and from corn
+  ex. transfer file to home directory on corn
+  $ scp mihika.txt mhemmady@corn.stanford.edu:~/
+
+  Farmshare Directory
+    /farmshare/user_data/mhemmady/
+
+  Put things into my farmshare directory and find it 
+    $ scp mihika.txt mhemmady@corn.stanford.edu:/farmshare/user_data/mhemmady/
+    $ ssh mhemmady@corn.stanford.edu
+    $ cd /farmshare/user_data/mhemmady/
+    $ ls
+    mihika.txt
+
+5) Git
+  $ git init myproject
+  $ cd myproject
+  $ git add .
+  $ git commit -m"xxxx"
+
