@@ -1,0 +1,48 @@
+BOOLEAN
+Logical operators return boolean values
+Floating point numbers should not be tested for equality, rather approximate values
+  can use:
+    import math
+    math.isclose(,1,.21-.11) returns true
+
+Boolean operations:
+  x or y: x or y has to be true to return true. else, false
+  x and y: both x and y have to be true to return true. else, false
+  not x: if x is false, then true. else, false
+
+LOOPS
+If:
+  only executed if statement is true
+
+If-else:
+  If
+  else if (elif)
+  else:
+
+True:
+  non-boolean values can be true or false
+
+LISTS
+Lists = vectors
+  length of list: len(x)
+  can slice a list
+  add, multiply lists
+  lists are mutable (elements can be changed)
+
+= refers to the same global object, doesnt create a new object
+
+Can shuffle and sort lists. Look up list operations.
+
+Range function exists to create lists or range of numbers
+
+LOOPS
+For loops with lists
+  for item in my_list
+    print(item)
+
+  for i in range(8):
+
+Loops:
+continue: ??
+break: break out of current loop
+pass: come back to implement it later

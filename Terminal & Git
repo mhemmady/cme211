@@ -1,0 +1,62 @@
+1) Looking at things
+  cat - dump a file to terminal
+  less - open file in a pager (q to quit)
+  file - inspect file type
+
+2) Manipulating files
+  mv - move
+  rm - remove (-rf flag for directories)
+  mkdir - create directories
+
+3) Inspecting commands
+  help 
+  man
+
+4) Remote Computing
+  my computer --> corn@stanford.edu --> worker node
+  ssh - program to link local computer to remote computer
+  $ ssh mhemmady@corn.stanford.edu
+
+  scp - transfer files to and from corn
+  ex. transfer file to home directory on corn
+  $ scp mihika.txt mhemmady@corn.stanford.edu:~/y
+
+  Farmshare Directory
+    /farmshare/user_data/mhemmady/
+
+  Put things into my farmshare directory and find it 
+    $ scp mihika.txt mhemmady@corn.stanford.edu:/farmshare/user_data/mhemmady/
+    $ ssh mhemmady@corn.stanford.edu
+    $ cd /farmshare/user_data/mhemmady/
+    $ ls
+    mihika.txt
+
+5) Git
+  configure git
+    $ git config --global user.name "xxxx"
+    $ git config --global user.email xxxxxx
+    $ git config --global core.editor xxx
+  stored in a git configuration file located at ~/.gitconfig
+  $ cat ~/config.gitconfig 
+
+  clone the test repository: create repository in github
+  in the directory you want to create the folder
+    $ git clone [github repository]
+
+  check the status of the repository in the right director
+    $ git status
+  add file to repository
+    $ git add xxx
+    $ git status
+
+  commit changes to repo
+    $ git commit -m "notes about change"
+
+  push changes to GitHub
+    $ git push origin master
+
+  modify file on GitHub, pull back to local repository
+    go to repository on local computer
+    $ git pull
+
+

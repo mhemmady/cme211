@@ -1,0 +1,47 @@
+Python
+  Run python 3 interpreter with $ python3
+  Exit interpreter: exit() or ctrl-d
+
+  create a python script ($ nano xxxx.py)
+  execute python script ($ python3 xxxx.py)
+
+Integers and floating point
+  Floor division: 5//3 rounds down --> 1 (would have been 1.667)
+  Modulus Operator: % returns remainder for integer division (8%3 = 2)
+  Exponent: **
+
+Modules
+  python has modules (collection of python resources)
+  have to import module
+  math module to use sqrt
+    import math
+    math.sqrt(9)
+
+Print:
+  print(x) or print("hello") - ends in a new line character
+  print("hello", end=' ') - no new line after
+  print("x","y") - separated by space
+  print ("x","y",', ')
+  str(P) -- P is a number, but convert it to a string
+  
+Values, Types, Variables:
+  values: the data (could be string, numbers, boolean values, etc.)
+  types: values have types (bool, str, int, float)
+  variables: associate a name to a value
+    start with letter or underscore
+
+Convert string/number
+a = str(55)
+a = float(“99.45”)
+
+Strings:
+slicing - can slice strings
+Can access just one character of a string, but cannot change a part of a string.
+You can add strings together, or different parts of strings together
+  Format:
+  r = 1
+  a = 2*math.pi
+  print("the area of a circle of radius {0} is {1}.”.format(r,a))
+  the area of a circle of radius 1 is 6.283
+
+

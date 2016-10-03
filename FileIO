@@ -1,0 +1,42 @@
+FILE IO
+
+open
+  f = open(filename, option)
+  filename = path to file
+  option - mode to open file
+    r (read) w (write) a (append)
+
+f.close()
+
+
+WITH
+with open('filename', 'option') as if:
+  print(f.read())
+
+prints the text and closes the file. 
+
+read()
+readline()
+readlines()
+
+ITERATE
+can iterate over lines and/or words with loops
+line is an object
+
+ex.
+with open('filename', 'option') as f:
+  for i, line in enumerate(f):
+    print("line []: []}".format(i,line))
+
+
+WRITE TO FILE
+write()
+writelines()
+write words from a list, multiples lines, etc..
+
+BUFFERING
+file will temporarily store lines to memory before storing to disk. 
+You have to close the file to flsuh all data to disk. 
+
+
+
