@@ -53,8 +53,10 @@
     $ git commit -m "notes about change"
 
   push changes to GitHub
-    $ git push 
+    $ git push origin master
 
   modify file on GitHub, pull back to local repository
+    go to repository on local computer
+    $ git pull
 
 
